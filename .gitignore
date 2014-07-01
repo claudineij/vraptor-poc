@@ -1,0 +1,29 @@
+*~
+.DS_Store
+.faces-config.xml.jsfdia
+.class
+.factorypath
+
+# Maven
+target
+bin
+tmp
+test-output
+
+# Eclipse
+.classpath
+.project
+.metadata
+.pmd
+.checkstyle
+.settings
+.externalToolBuilders
+MANIFEST.MF
+pmd-eclipse.log
+
+# IDEA
+.idea
+*.iml
+*.ipr
+*.iws
+out
