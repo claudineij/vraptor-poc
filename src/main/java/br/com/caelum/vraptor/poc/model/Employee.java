@@ -10,15 +10,6 @@ public class Employee {
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Department department;
 
-	public Employee() {
-
-	}
-
-	public Employee(final String name, final Department department) {
-		this.name = name;
-		this.department = department;
-	}
-
 	public String getName() {
 		return name;
 	}

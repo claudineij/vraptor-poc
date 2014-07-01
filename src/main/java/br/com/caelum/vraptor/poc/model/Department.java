@@ -13,18 +13,13 @@ public class Department {
 	@ManyToMany
 	private List<Employee> responsibles;
 
-	public Department(final Long id) {
+	public Department() {
 		this.responsibles = new ArrayList<>();
 	}
 
-	public Department(final Long id, final String name, final List<Employee> responsibles) {
+	public Department(Long id) {
 		this.id = id;
-		this.name = name;
-		this.responsibles = responsibles;
-	}
-
-	public Department() {
-
+		this.responsibles = new ArrayList<>();
 	}
 
 	public Long getId() {
