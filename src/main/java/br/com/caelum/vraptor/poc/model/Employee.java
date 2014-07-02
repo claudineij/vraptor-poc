@@ -5,10 +5,20 @@ import javax.persistence.ManyToOne;
 
 public class Employee {
 
+	private Long id;
+
 	private String name;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Department department;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(final Long id) {
+		this.id = id;
+	}
 
 	public String getName() {
 		return name;
